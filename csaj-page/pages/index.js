@@ -14,6 +14,9 @@ export default function Home() {
           <a href="https://www.facebook.com/csajpage">Official Facebook Page</a>
         </p>
       </section>
+      <section className={utilStyles.headingMd}>
+        <h1>Home</h1>
+      </section>
     </Layout>
   );
 }
