@@ -2,7 +2,7 @@ export default function Postblock({ post }) {
     return (
         <div className="relative">
             <a href={`/posts/${post.id}`} className="block overflow-hidden group rounded-xl">
-                <img src={post.image} className="object-cover w-full h-56 transition-all duration-300 ease-out sm:h-64 group-hover:scale-110" alt=""/>
+                <img src={post.image[0]} className="object-cover w-full h-56 transition-all duration-300 ease-out sm:h-64 group-hover:scale-110" alt=""/>
             </a>
             <div className="relative mt-5">
                 <p className="uppercase font-semibold text-xs mb-2.5 text-purple-600">

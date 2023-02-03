@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Layout from "../../components/layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Date from "../../lib/date";
+import NextImage from 'next/image';
+import Image from 'next/image';
 
 export default function Post({ postData }) {
   return (
@@ -14,7 +16,22 @@ export default function Post({ postData }) {
             <p>Written on <Date dateString={postData.date} /></p>
             <br/>
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+            <br/>
+              {postData.image.map((img) => (
+                <div className='relative' width='500' height='500' align='center'>
+                  <Image
+                    alt={postData.title}
+                    src={img}
+                    unoptimized={true}
+                    height={500}
+                    width={800}
+                    intrinsic
+                  />
+                </div>
+              ))}
+            
         </article>
+        
     </Layout>
   );
 }

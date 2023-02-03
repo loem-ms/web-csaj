@@ -10,11 +10,18 @@ export default function News({ allPostsData }) {
       <Head>
         <title>CSAJ-News</title>
       </Head>
-      <section class="bg-white">
-        <div class="px-8 py-10 mx-auto lg:max-w-screen-xl sm:max-w-xl md:max-w-full sm:px-12 md:px-16 lg:py-20 sm:py-16">
-            <div class="grid gap-x-8 gap-y-12 sm:gap-y-16 md:grid-cols-2 lg:grid-cols-3">
+
+      
+
+      <h1 className="text-5xl md:text-6xl lg:text-6xl font-extrabold mb-6 relative text-center">
+        Our Recent Activities
+      </h1>
+
+      <section className="bg-white">
+        <div className="px-8 py-10 mx-auto lg:max-w-screen-xl sm:max-w-xl md:max-w-full sm:px-12 md:px-16 lg:py-20 sm:py-16">
+            <div className="grid gap-x-8 gap-y-12 sm:gap-y-16 md:grid-cols-2 lg:grid-cols-3">
                 {allPostsData.map((post) => (
-                    <Postblock post={{id: post.id, date: post.date, title: post.title, image: '/logo.jpg'}} />
+                    <Postblock post={{id: post.id, date: post.date, title: post.title, abstract: post.abstract, image: post.image}} />
                 ))}
             </div>
         </div>

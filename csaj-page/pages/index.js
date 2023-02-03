@@ -20,7 +20,13 @@ export default function Home({ allPostsData }) {
               </div>
               <p className="text-gray-500 text-xl lg:max-w-md">Cambodian Students' Association in Japan</p><div className="tails-relative">Here should be a brief introduction about what CSAJ is.</div><p></p>
               <div className="flex md:flex-row flex-col mt-7 md:w-auto w-full md:space-y-0 space-y-5 md:space-x-2">
-                  <a href="#_" className="px-6 py-3 text-lg bg-gray-200 text-center text-gray-700 rounded font-bold">Learn More About Us</a>
+                  <a href="/about" className="px-6 py-3 text-lg bg-gray-200 text-center text-gray-700 rounded font-bold">Learn More About Us</a>
+                  <a href="https://www.facebook.com/csajpage" className="text-gray-400 hover:text-gray-500">
+                            <span className="sr-only">Facebook</span>
+                            <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
+                            </svg>
+                  </a>
               </div>
           </div>
           <div className="lg:w-1/4 w-full lg:max-w-none max-w-2xl mx-auto lg:pt-0 pt-16 lg:pl-10 xl:pl-0">
@@ -37,14 +43,14 @@ export default function Home({ allPostsData }) {
                 <h2 className="relative inline-block px-5 py-2 mb-5 text-5xl font-bold font-extrabold bg-white border-2 border-black">
                     <div className="absolute w-full py-2 h-full inset-0 border-2 border-black bg-black ml-1.5 mt-1.5"></div>
                     <div className="absolute inset-0 w-full h-full py-2 bg-white"></div>
-                    <span className="relative">Our Activities</span>
+                    <span className="relative"><a href="/news">Our Activities</a></span>
                 </h2>
                 <p className="text-xl font-medium text-gray-800 mb-7">View the latest posts from our blog</p>
             </div>
 
             <div className="grid grid-cols-12 gap-8">
                 {allPostsData.map((post) => (
-                        <Posthighlight post={{id: post.id, date: post.date, title: post.title, image: '/logo.jpg'}} />
+                        <Posthighlight post={{id: post.id, date: post.date, title: post.title, abstract:post.abstract, image: post.image}} />
                     ))}
             </div>
         </div>
@@ -86,7 +92,7 @@ export default function Home({ allPostsData }) {
 }
 
 export async function getStaticProps() {
-    const allPostsData = getSortedPostsData()
+    const allPostsData = getSortedPostsData().slice(0, 6)
     return {
       props: {
         allPostsData
