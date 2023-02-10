@@ -1,9 +1,11 @@
+export const YEAR = 2023;
+
 export default function Footer() {
     return (
-        <section className="text-gray-700 bg-white body-font">
+        <section className="text-gray-700 bg-gray-100 body-font">
                 <div className="container flex flex-col items-center px-8 py-8 mx-auto max-w-7xl sm:flex-row">
-                    <a href="#_" className="text-xl font-black leading-none text-gray-900 select-none logo">CSAJ<span className="text-indigo-600"></span></a>
-                    <p className="mt-4 text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:mt-0">© 2022 CSAJ - Cambodian Students' Association in Japan
+                    <a href="/" className="text-xl font-black leading-none text-gray-900 select-none logo">CSAJ<span className="text-indigo-600"></span></a>
+                    <p className="mt-4 text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:mt-0">Copyright © {YEAR} CSAJ | Cambodian Students' Association in Japan
                     </p>
                     <span className="inline-flex justify-center mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-start">
                         <a href="https://www.facebook.com/csajpage" className="text-gray-400 hover:text-gray-500">
