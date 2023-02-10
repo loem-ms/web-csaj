@@ -3,13 +3,17 @@ import Layout from '../components/layout';
 export default function Tips() {
   return (
     <Layout title="CSAJ-Tips">
-        <section className="w-full py-20 bg-gray-50">
-            <div className="px-10 mx-auto max-w-7xl">
+        
+        <section className="w-full py-10 bg-white">
+            <h1 className="text-5xl md:text-6xl lg:text-6xl font-extrabold mb-6 relative text-center text-blue-600">
+                Life in Japan
+            </h1>
+            <div className="px-10 mx-auto max-w-7xl py-16">
                 
                 <div className="grid overflow-hidden lg:rounded-xl">
                     <div className="grid items-center lg:grid-cols-2">
                         <div className="flex flex-col items-start justify-center h-full py-16 pl-16 pr-16 space-y-4 bg-white lg:pr-20 lg:py-0">
-                            <h3 className="text-2xl font-semibold sm:text-4xl">
+                            <h3 className="text-2xl font-semibold sm:text-4xl text-rose-400">
                                 <a href='/tips/living'> Living in Japan</a>
                             </h3>
                             <p className="text-lg text-gray-600">
@@ -26,7 +30,7 @@ export default function Tips() {
                             <img src="https://images.unsplash.com/photo-1541506618330-7c369fc759b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1665&amp;q=80" className="object-cover w-full h-full" alt=""/>
                         </div>
                         <div className="flex flex-col items-start justify-center h-full py-16 pl-16 pr-16 space-y-4 bg-white lg:pr-20 lg:py-0">
-                            <h3 className="text-2xl font-semibold sm:text-4xl">
+                            <h3 className="text-2xl font-semibold sm:text-4xl text-teal-600" >
                                 <a href='/tips/studying'> Studying in Japan</a>
                             </h3>
                             <p className="text-lg text-left text-gray-600">
@@ -37,7 +41,7 @@ export default function Tips() {
 
                     <div className="grid items-center lg:grid-cols-2">
                         <div className="flex flex-col items-start justify-center h-full py-16 pl-16 pr-16 space-y-4 bg-white lg:pr-20 lg:py-0 tails-relative">
-                            <h3 className="text-2xl font-semibold sm:text-4xl">
+                            <h3 className="text-2xl font-semibold sm:text-4xl text-violet-600">
                                 <a href='/tips/working'> Working in Japan</a>
                             </h3>
                             <p className="text-lg text-gray-600">

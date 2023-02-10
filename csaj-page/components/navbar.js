@@ -9,13 +9,13 @@ export default function Navbar() {
                     </a>
                 </div>
             <div className="inline-flex items-center lg:justify-end xl:ml-5">
-                <nav className="flex flex-wrap items-center space-x-4 text-xs font-semibold tracking-wide uppercase sm:space-x-6">
-                    <a href="/" className="text-gray-400 hover:text-gray-500">Home</a>
-                    <a href="/news" className="text-gray-400 hover:text-gray-500">NEWS</a>
-                    <a href="/tips" className="text-gray-400 hover:text-gray-500">Tips</a>
-                    <a href="/about" className="text-gray-400 hover:text-gray-500">About Us</a>
+                <nav className="flex flex-wrap items-center space-x-4 text-4xl font-semibold tracking-wide uppercase sm:space-x-6">
+                    <a href="/" className="text-gray-600 hover:text-gray-800">Home</a>
+                    <a href="/news" className="text-gray-600 hover:text-gray-800">NEWS</a>
+                    <a href="/tips" className="text-gray-600 hover:text-gray-800">Life in Japan</a>
+                    <a href="/about" className="text-gray-600 hover:text-gray-800">About Us</a>
                 </nav>
-                <a href="#" className="inline-flex tracking-wide uppercase text-xs items-center sm:mt-0 mt-5 sm:ml-8 justify-center px-5 py-2.5 font-semibold text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">Register</a>
+                <a href="#" className="inline-flex tracking-wide uppercase text-xl items-center sm:mt-0 mt-5 sm:ml-8 justify-center px-5 py-2.5 font-semibold text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">Join Us</a>
             </div>
             
             </div>
