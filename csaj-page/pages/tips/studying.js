@@ -7,51 +7,57 @@ export default function Tips() {
                     <h1 className="text-5xl md:text-6xl lg:text-6xl font-extrabold mb-6 relative text-center text-sky-600">
                         Study in Japan
                     </h1>
-                    <div className="px-10 mx-auto max-w-7xl py-16">
+                    <div className="font-mono text-2xl px-10 mx-auto max-w-7xl py-16 text-justify">
                         
-                        <div className="grid overflow-hidden lg:rounded-xl">
-                            <div className="grid items-center lg:grid-cols-2">
-                                <div className="flex flex-col items-start justify-center h-full py-16 pl-16 pr-16 space-y-4 bg-white lg:pr-20 lg:py-0">
-                                    <h3 className="text-2xl font-semibold sm:text-4xl text-rose-400">
-                                        <a href='/tips/living'> University </a>
-                                    </h3>
-                                    <p className="text-lg text-gray-600">
-                                        A beautiful drag and drop interface that allows you to create the landing page of your dreams. Our templates are designed for maximum conversion and the best user experience.
-                                    </p>
-                                </div>
-                                <div className="overflow-hidden bg-gray-100 h-96">
-                                    <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=3270&amp;q=80" className="object-cover w-full h-full" alt=""/>
-                                </div>
-                            </div>
-
-                            <div className="grid items-center lg:grid-cols-2">
-                                <div className="order-last overflow-hidden bg-gray-100 h-96 lg:order-first">
-                                    <img src="https://images.unsplash.com/photo-1541506618330-7c369fc759b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1665&amp;q=80" className="object-cover w-full h-full" alt=""/>
-                                </div>
-                                <div className="flex flex-col items-start justify-center h-full py-16 pl-16 pr-16 space-y-4 bg-white lg:pr-20 lg:py-0">
-                                    <h3 className="text-2xl font-semibold sm:text-4xl text-teal-600" >
-                                        <a href='/tips/studying'> Scholarship </a>
-                                    </h3>
-                                    <p className="text-lg text-left text-gray-600">
-                                        Delight your users with the most intuitive and easy to follow designs that will help you convert those visitors into paying customers.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className="grid items-center lg:grid-cols-2">
-                                <div className="flex flex-col items-start justify-center h-full py-16 pl-16 pr-16 space-y-4 bg-white lg:pr-20 lg:py-0 tails-relative">
-                                    <h3 className="text-2xl font-semibold sm:text-4xl text-violet-600">
-                                        <a href='/tips/working'> Other </a>
-                                    </h3>
-                                    <p className="text-lg text-gray-600">
-                                        All our templates are easy to customize and make your own. It has never been easier to integrate beautiful designs into your web applications.
-                                    </p>
-                                </div>
-                                <div className="bg-gray-100 h-96">
-                                    <img src="https://images.unsplash.com/photo-1416339442236-8ceb164046f8?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3203&amp;q=80" className="object-cover w-full h-full" alt=""/>
-                                </div>
-                            </div>
-                        </div>
+                        <p class="mb-3 font-light text-black-400 dark:text-black-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-black-900 dark:first-letter:text-black-100 first-letter:mr-3 first-letter:float-left">
+                        Japan is a popular destination for international students, with its rich cultural heritage, advanced technology, and world-renowned education system. 
+                        However, studying in a foreign country can be an intimidating experience, especially if you are not familiar with the local customs and ways of life. 
+                        In this article, we will provide some tips and advice for international students who are about to embark on a journey to study in Japan.
+                        </p>
+                        <br/>
+                        <p class="mb-3 font-light text-black-400 dark:text-black-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-black-900 dark:first-letter:text-black-100 first-letter:mr-3 first-letter:float-left">
+                        Research the universities: Japan has many universities to choose from, so it is important to do your research to find the best fit for your needs. 
+                        Consider factors such as location, programs offered, campus facilities, and language requirements when making your decision. 
+                        Additionally, it is a good idea to reach out to current international students or alumni to get a firsthand account of their experiences.
+                        </p>
+                        <br/>
+                        <p class="mb-3 font-light text-black-400 dark:text-black-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-black-900 dark:first-letter:text-black-100 first-letter:mr-3 first-letter:float-left">
+                        Learn the language: Although English is widely used in Japan, knowing some basic Japanese will make your transition smoother and will also give you a deeper understanding of the culture. 
+                        You may even find that some courses or programs are taught only in Japanese, so it is essential to have a basic understanding of the language before you arrive.
+                        </p>
+                        <br/>
+                        <p class="mb-3 font-light text-black-400 dark:text-black-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-black-900 dark:first-letter:text-black-100 first-letter:mr-3 first-letter:float-left">
+                        Familiarize yourself with the culture: Japan has a unique and rich cultural heritage, and it is important to be aware of the customs and traditions that are unique to the country. 
+                        For example, in Japan it is customary to bow as a form of greeting, to take off your shoes when entering a home, and to slurp your noodles loudly when eating. 
+                        Familiarizing yourself with these cultural norms will make it easier for you to navigate through daily life in Japan.
+                        </p>
+                        <br/>
+                        <p class="mb-3 font-light text-black-400 dark:text-black-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-black-900 dark:first-letter:text-black-100 first-letter:mr-3 first-letter:float-left">
+                        Get involved with the local community: Participating in local events and activities is a great way to meet new people and to learn more about the culture. 
+                        Joining a local club or group can be a great way to connect with people who share similar interests, and it can also help you to practice your Japanese.
+                        </p>
+                        <br/>
+                        <p class="mb-3 font-light text-black-400 dark:text-black-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-black-900 dark:first-letter:text-black-100 first-letter:mr-3 first-letter:float-left">
+                        Plan your finances: Studying in Japan can be expensive, so it is important to plan your finances carefully. 
+                        Make sure you have a budget and stick to it, and be aware of any unexpected costs such as transportation and entertainment expenses. 
+                        It is also a good idea to open a bank account in Japan and to exchange some of your money into yen before you arrive.
+                        </p>
+                        <br/>
+                        <p class="mb-3 font-light text-black-400 dark:text-black-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-black-900 dark:first-letter:text-black-100 first-letter:mr-3 first-letter:float-left">
+                        Make use of resources: There are many resources available to international students in Japan, such as the local embassy, student organizations, and local schools. 
+                        These resources can provide support and information on a variety of topics, from housing and transportation to cultural events and opportunities.
+                        </p>
+                        <br/>
+                        <p class="mb-3 font-light text-black-400 dark:text-black-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-black-900 dark:first-letter:text-black-100 first-letter:mr-3 first-letter:float-left">
+                        Take advantage of your studies: Studying in Japan provides a unique opportunity to learn about the culture and to develop your language skills. 
+                        Make the most of this opportunity by taking advantage of the resources available to you and by immersing yourself in the culture. 
+                        Whether it's visiting local museums, participating in cultural events, or simply having conversations with the locals, you will find that there are many ways to learn and grow while you are in Japan.
+                        </p>
+                        <br/>   
+                        In conclusion, studying in Japan as an international student can be an amazing experience, but it can also be a little overwhelming. 
+                        However, by following these tips and being open-minded, you can make the most of your time in Japan and have a successful and memorable experience. 
+                        Japan is a welcoming country and the people are friendly and eager to help, so don't be afraid to ask for help or advice when you need it. 
+                        Good luck, and enjoy your time in Japan!
                     </div>
                 </section>       
     </Layout>

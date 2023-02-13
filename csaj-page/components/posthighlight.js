@@ -1,6 +1,6 @@
 export default function Posthighlight({ post }) {
     return (
-        <div class="relative col-span-12 duration-150 ease-out transform border-2 border-black cursor-pointer md:col-span-6 lg:col-span-4 hover:scale-105">
+        <div class="relative font-mono col-span-12 duration-150 ease-out transform border-2 border-black cursor-pointer md:col-span-6 lg:col-span-4 hover:scale-105">
                 <a href={`/posts/${post.id}`} class="block h-64 overflow-hidden">
                     <img src={post.image[0]} class="object-cover w-full h-full" />
                 </a>
@@ -10,11 +10,13 @@ export default function Posthighlight({ post }) {
                             {post.title}
                         </a>
                     </h2>
-                    <p class="mb-2 text-sm font-medium tracking-widest text-gray-500">Written on {post.date}</p>
-                    <p class="text-gray-700">
+                    <p class="mb-2 text-sm font-mono tracking-widest text-gray-500">Written on {post.date}</p>
+                    <p class="text-gray-700 text-justify">
+                        <a href={`/posts/${post.id}`} class="text-ms">
                         <span>
                             {post.abstract}
                         </span>
+                        </a>
                     </p>
                 </div>
         </div>
