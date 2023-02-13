@@ -24,17 +24,58 @@ export const VALUE = {
 export default function About() {
     return  (
         <Layout title="CSAJ-About Us">
-            <h1 className="py-12 text-5xl md:text-6xl lg:text-6xl font-extrabold mb-6 relative text-center text-blue-600">
+            <h1 className="font-mono py-12 text-5xl md:text-6xl lg:text-5xl font-extrabold mb-6 relative text-center text-blue-600">
                 Cambodian Students' Association in Japan
             </h1>
+
             <>
-            <section className="w-full px-8 py-8 md:py-8 xl:px-0 tails-selected-element bg-blue-100">
+            <section className="font-mono w-full px-8 py-8 md:py-8 xl:px-0 tails-selected-element bg-gray-100">
                 <FeatureText info={MISSION} />
                 <FeatureText info={VISION} />
                 <FeatureText info={VALUE} />
             </section>
             </>
-            <section className="relative py-12 overflow-hidden bg-white">
+
+            <section className="">
+                <div className="flex max-w-7xl lg:flex-row space-x-24 relative mx-auto py-16 lg:py-16 ">
+                <div className="lg:w-1/2 w-full lg:max-w-none max-w-2xl relative flex items-start justify-center flex-col">  
+                    <p className="font-mono text-justify text-lg">
+                    The Cambodia Students' Association in Japan (CSAJ)
+                    is a non-profit organization that brings together Cambodian students studying in Japan. 
+                    Founded in XXXX, CSAJ has grown to become a vibrant community of students from all over Cambodia who are pursuing higher education in Japan.
+                    </p>
+                    <br/>
+                    <p className="font-mono text-justify text-lg">
+                    One of CSAJ's main goals is to provide a supportive network for Cambodian students as they navigate their studies in Japan. The organization offers assistance in a variety of areas, including academic and career advising, language classes, and mental health support. With a dedicated team of volunteer students and staff, CSAJ is committed to helping Cambodian students achieve their full potential in Japan.
+                    </p>
+                </div>
+
+                <div className="lg:w-1/2 mx-auto">
+                    <img src="https://cdn.devdojo.com/images/march2022/hero-01.png" className="" />
+                </div>
+
+                </div>
+            </section>
+
+            <section className="">
+                <div className="flex max-w-7xl lg:flex-row space-x-24 relative mx-auto py-16 lg:py-16 ">
+                    <div className="lg:w-1/2 mx-auto">
+                        <img src="https://cdn.devdojo.com/images/march2022/hero-01.png" className="" />
+                    </div>
+                    <div className="lg:w-1/2 w-full lg:max-w-none max-w-2xl relative flex items-start justify-center flex-col">  
+                        <p className="font-mono text-justify text-lg">
+                            CSAJ provides support to its members through various programs and events aimed at promoting the well-being and success of Cambodian students in Japan. This includes academic and career counseling, language classes, cultural activities, and social events that allow students to connect with one another and build a sense of community.
+                        </p>
+                        <br/>
+                        <p className="font-mono text-justify text-lg">
+                            In addition to supporting its members, CSAJ also plays an important role in promoting the rich cultural heritage of Cambodia in Japan. Through cultural events, exhibitions, and performances, the organization helps to introduce the unique cultural traditions of Cambodia to the Japanese public and foster greater understanding and appreciation between the two countries.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <section className="relative py-12 overflow-hidden bg-white font-mono">
                 <span className="absolute top-0 right-0 flex flex-col items-end mt-0 -mr-16 opacity-60">
                     <span className="container hidden w-screen h-32 max-w-xs mt-20 transform rounded-full rounded-r-none md:block md:max-w-xs lg:max-w-lg 2xl:max-w-3xl bg-blue-50"></span>
                 </span>

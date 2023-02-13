@@ -4,7 +4,7 @@ export default function Tips() {
   return (
     <Layout title="CSAJ-Tips">
         
-        <section className="w-full py-10 bg-white">
+        <section className="w-full py-10 bg-white font-mono">
             <h1 className="text-5xl md:text-6xl lg:text-6xl font-extrabold mb-6 relative text-center text-blue-600">
                 Life in Japan
             </h1>
@@ -16,8 +16,10 @@ export default function Tips() {
                             <h3 className="text-2xl font-semibold sm:text-4xl text-rose-400">
                                 <a href='/tips/living'> Living in Japan</a>
                             </h3>
-                            <p className="text-lg text-gray-600">
-                                A beautiful drag and drop interface that allows you to create the landing page of your dreams. Our templates are designed for maximum conversion and the best user experience.
+                            <p className="text-lg text-gray-600 text-justify">
+                            Japan is a beautiful country that is steeped in rich history and culture, and is home to many international students who come to study and experience the unique blend of traditional and modern lifestyles.
+                            However, moving to a new country can be an intimidating experience, especially if you are from a different culture and are not familiar with the local customs and ways of ... 
+                            <a className="text-xl font-mono text-gray-800 font-bold" href="/tips/living">[Read more]</a>
                             </p>
                         </div>
                         <div className="overflow-hidden bg-gray-100 h-96">
@@ -33,8 +35,10 @@ export default function Tips() {
                             <h3 className="text-2xl font-semibold sm:text-4xl text-teal-600" >
                                 <a href='/tips/studying'> Studying in Japan</a>
                             </h3>
-                            <p className="text-lg text-left text-gray-600">
-                                Delight your users with the most intuitive and easy to follow designs that will help you convert those visitors into paying customers.
+                            <p className="text-lg text-left text-gray-600 text-justify">
+                            Japan is a popular destination for international students, with its rich cultural heritage, advanced technology, and world-renowned education system. 
+                            However, studying in a foreign country can be an intimidating experience, especially if you are not familiar with the local customs and ways of life...
+                            <a className="text-xl font-mono text-gray-800 font-bold" href="/tips/studying">[Read more]</a>
                             </p>
                         </div>
                     </div>
@@ -45,7 +49,9 @@ export default function Tips() {
                                 <a href='/tips/working'> Working in Japan</a>
                             </h3>
                             <p className="text-lg text-gray-600">
-                                All our templates are easy to customize and make your own. It has never been easier to integrate beautiful designs into your web applications.
+                            Japan is a fascinating country with a rich cultural heritage and a thriving economy, making it an attractive destination for international students who are looking to start their careers after graduation. 
+                            However, the process of finding a job in Japan can be a bit challenging, especially for those who are unfamiliar with the local culture and customs...
+                            <a className="text-xl font-mono text-gray-800 font-bold" href="/tips/working">[Read more]</a>
                             </p>
                         </div>
                         <div className="bg-gray-100 h-96">

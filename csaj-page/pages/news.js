@@ -7,7 +7,7 @@ import Postblock from '../components/postblock'
 export default function News({ allPostsData }) {
   return (
     <Layout title="CSAJ-News">
-      <section className="w-full py-10 bg-white">
+      <section className="w-full py-10 bg-white font-mono">
         <h1 className="text-5xl md:text-6xl lg:text-6xl font-extrabold mb-6 relative text-center text-blue-600">
           Recent Activities
         </h1>

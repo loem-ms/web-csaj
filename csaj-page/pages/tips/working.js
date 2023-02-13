@@ -7,51 +7,41 @@ export default function Tips() {
                     <h1 className="text-5xl md:text-6xl lg:text-6xl font-extrabold mb-6 relative text-center text-sky-600">
                         Working in Japan
                     </h1>
-                    <div className="px-10 mx-auto max-w-7xl py-16">
+                    <div className="font-mono text-2xl px-10 mx-auto max-w-7xl py-16 text-justify">
                         
-                        <div className="grid overflow-hidden lg:rounded-xl">
-                            <div className="grid items-center lg:grid-cols-2">
-                                <div className="flex flex-col items-start justify-center h-full py-16 pl-16 pr-16 space-y-4 bg-white lg:pr-20 lg:py-0">
-                                    <h3 className="text-2xl font-semibold sm:text-4xl text-rose-400">
-                                        <a href='/tips/living'> Job Hunting </a>
-                                    </h3>
-                                    <p className="text-lg text-gray-600">
-                                        A beautiful drag and drop interface that allows you to create the landing page of your dreams. Our templates are designed for maximum conversion and the best user experience.
-                                    </p>
-                                </div>
-                                <div className="overflow-hidden bg-gray-100 h-96">
-                                    <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=3270&amp;q=80" className="object-cover w-full h-full" alt=""/>
-                                </div>
-                            </div>
-
-                            <div className="grid items-center lg:grid-cols-2">
-                                <div className="order-last overflow-hidden bg-gray-100 h-96 lg:order-first">
-                                    <img src="https://images.unsplash.com/photo-1541506618330-7c369fc759b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1665&amp;q=80" className="object-cover w-full h-full" alt=""/>
-                                </div>
-                                <div className="flex flex-col items-start justify-center h-full py-16 pl-16 pr-16 space-y-4 bg-white lg:pr-20 lg:py-0">
-                                    <h3 className="text-2xl font-semibold sm:text-4xl text-teal-600" >
-                                        <a href='/tips/studying'> Networking </a>
-                                    </h3>
-                                    <p className="text-lg text-left text-gray-600">
-                                        Delight your users with the most intuitive and easy to follow designs that will help you convert those visitors into paying customers.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className="grid items-center lg:grid-cols-2">
-                                <div className="flex flex-col items-start justify-center h-full py-16 pl-16 pr-16 space-y-4 bg-white lg:pr-20 lg:py-0 tails-relative">
-                                    <h3 className="text-2xl font-semibold sm:text-4xl text-violet-600">
-                                        <a href='/tips/working'> Other </a>
-                                    </h3>
-                                    <p className="text-lg text-gray-600">
-                                        All our templates are easy to customize and make your own. It has never been easier to integrate beautiful designs into your web applications.
-                                    </p>
-                                </div>
-                                <div className="bg-gray-100 h-96">
-                                    <img src="https://images.unsplash.com/photo-1416339442236-8ceb164046f8?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3203&amp;q=80" className="object-cover w-full h-full" alt=""/>
-                                </div>
-                            </div>
-                        </div>
+                        <p class="mb-3 font-light text-black-400 dark:text-black-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-black-900 dark:first-letter:text-black-100 first-letter:mr-3 first-letter:float-left">
+                        Japan is a fascinating country with a rich cultural heritage and a thriving economy, making it an attractive destination for international students who are looking to start their careers after graduation. However, the process of finding a job in Japan can be a bit challenging, especially for those who are unfamiliar with the local culture and customs. In this article, we will provide some tips and advice for international students who are looking to work in Japan after graduation.
+                        </p>
+                        <br/>
+                        <p class="mb-3 font-light text-black-400 dark:text-black-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-black-900 dark:first-letter:text-black-100 first-letter:mr-3 first-letter:float-left">
+                        Research the job market: Before you begin your job search, it is important to research the job market in Japan and to get a good understanding of the industries and companies that are hiring. This information can be found online, through networking, or by speaking to recruiters or alumni. It is also important to research the types of roles and salaries that are typical in your field, as this can help you to determine your expectations and to set your goals.
+                        </p>
+                        <br/>
+                        <p class="mb-3 font-light text-black-400 dark:text-black-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-black-900 dark:first-letter:text-black-100 first-letter:mr-3 first-letter:float-left">
+                        Improve your language skills: Knowing Japanese is essential for many jobs in Japan, so it is important to continue to develop your language skills after graduation. This can be done through language classes, by practicing with native speakers, or by watching Japanese movies and TV shows. It is also a good idea to take a test of Japanese proficiency, such as the Japanese Language Proficiency Test (JLPT), as this can demonstrate your language skills to potential employers.
+                        </p>
+                        <br/>
+                        <p class="mb-3 font-light text-black-400 dark:text-black-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-black-900 dark:first-letter:text-black-100 first-letter:mr-3 first-letter:float-left">
+                        Network with locals: Networking is key to finding a job in Japan, and it is important to make connections with people in your field or industry. This can be done through alumni associations, professional organizations, or by attending networking events and career fairs. You can also reach out to former classmates or colleagues to see if they have any job leads or connections.
+                        </p>
+                        <br/>
+                        <p class="mb-3 font-light text-black-400 dark:text-black-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-black-900 dark:first-letter:text-black-100 first-letter:mr-3 first-letter:float-left">
+                        Update your resume: In Japan, resumes play a significant role in the hiring process, so it is important to make sure that your resume is up-to-date and tailored to the Japanese job market. Make sure to include your Japanese language skills and any relevant experience you have gained while studying in Japan. It is also a good idea to have a Japanese version of your resume, as many companies in Japan prefer to receive resumes in Japanese.
+                        </p>
+                        <br/>
+                        <p class="mb-3 font-light text-black-400 dark:text-black-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-black-900 dark:first-letter:text-black-100 first-letter:mr-3 first-letter:float-left">
+                        Be prepared for interviews: In Japan, the interview process is often more formal and structured than in other countries, so it is important to be prepared. This may include dressing in business attire, preparing answers to common interview questions, and having a good understanding of the company and the role you are applying for. It is also a good idea to have a list of questions to ask the interviewer, as this shows your interest in the company and your enthusiasm for the role.
+                        </p>
+                        <br/>
+                        <p class="mb-3 font-light text-black-400 dark:text-black-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-black-900 dark:first-letter:text-black-100 first-letter:mr-3 first-letter:float-left">
+                        Know the job market trends: In Japan, the job market is constantly evolving, so it is important to stay informed about the latest trends and developments in your field or industry. This information can be found through online resources, industry publications, or by speaking to recruiters or HR professionals.
+                        </p>
+                        <br/>
+                        <p class="mb-3 font-light text-black-400 dark:text-black-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-black-900 dark:first-letter:text-black-100 first-letter:mr-3 first-letter:float-left">
+                        Be patient: The job search process in Japan can be long and competitive, so it is important to be patient and persistent. Don't get discouraged if your first few applications are not successful, and continue to network, improve your skills, and apply for roles that you are interested in.
+                        </p>
+                        <br/>   
+                        In conclusion, working in Japan after international student life can be a challenging but rewarding experience. By following these tips and being proactive, you can increase your chances of finding a job in Japan and making a successful transition to the working world. Japan is a welcoming country, and the people are friendly and eager to help, so don't be afraid to ask for help or advice when you need it. Good luck, and enjoy your time in Japan!
                     </div>
                 </section>       
     </Layout>
