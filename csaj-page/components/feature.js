@@ -7,7 +7,7 @@ export default function FeatureText({ info }) {
 
             <div className="relative w-full mt-6 overflow-hidden md:mt-1 md:w-9/12">
                 <div className="w-full space-y-6" >
-                    <h3 className="text-2xl font-bold leading-7">{info.abstract}</h3>
+                    <h3 className="text-2xl font-bold leading-7 text-gray-600">{info.abstract}</h3>
                     <p className="text-base font-normal leading-none text-gray-700 md:text-lg">{info.detail}</p>
                     <br />
                 </div>

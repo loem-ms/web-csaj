@@ -1,13 +1,13 @@
 import Head from 'next/head';
 import Layout from "../../components/layout";
-import { getAllPostIds } from "../../lib/posts";
+import { getAllColumnIds } from "../../lib/columns";
 import Date from "../../lib/date";
 import Image from 'next/image';
 import md from 'markdown-it';
 import fs from 'fs';
 import matter from 'gray-matter';
 
-export default function Post({ postData, content }) {
+export default function Column({ postData, content }) {
   return (
     <Layout>
       <Head>
@@ -50,7 +50,7 @@ export default function Post({ postData, content }) {
 
 export async function getStaticPaths() {
   // Return a list of possible value for id
-  const paths = getAllPostIds();
+  const paths = getAllColumnIds();
   return {
     paths,
     fallback: false,
@@ -58,7 +58,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const fileName = fs.readFileSync(`posts/${params.id}.md`, 'utf-8');
+  const fileName = fs.readFileSync(`columns/${params.id}.md`, 'utf-8');
   const { data: postData, content } = matter(fileName);
   return {
     props: {

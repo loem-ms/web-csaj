@@ -1,7 +1,7 @@
 
 export default function Navbar() {
     return (
-        <section className="w-full px-8 text-gray-700 bg-white">
+        <section className="w-max-fit px-2 text-gray-700 bg-white">
             <div className="flex flex-col flex-wrap items-center justify-between py-6 mx-auto md:flex-row max-w-7xl">
                 <div className="relative flex flex-col md:flex-row">
                     <a href="/" className="flex items-center mb-5 font-sans  text-gray-900 lg:w-auto lg:items-center lg:justify-center md:mb-0">

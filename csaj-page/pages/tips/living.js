@@ -4,7 +4,7 @@ export default function Tips() {
     return (
         <Layout title="CSAJ-LivingInJapan">
             <section className="w-full py-10 bg-white">
-                <h1 className="font-sans text-5xl md:text-6xl lg:text-6xl font-extrabold mb-6 relative text-center text-sky-600">
+                <h1 className="font-sans text-5xl md:text-6xl lg:text-6xl font-extrabold mb-6 relative text-center text-rose-400">
                     Living in Japan
                 </h1>
                 <div className="font-sans text-2xl px-10 mx-auto max-w-7xl py-16 text-justify">

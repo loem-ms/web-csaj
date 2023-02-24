@@ -5,15 +5,32 @@ export default function Tips() {
         <Layout title="CSAJ-Tips">
 
             <section className="w-full py-10 bg-white font-sans">
-                <h1 className="text-5xl md:text-6xl lg:text-6xl font-extrabold mb-6 relative text-center text-blue-600">
+                <h1 className="text-5xl md:text-6xl lg:text-6xl font-extrabold mb-6 relative text-center text-rose-400">
                     Life in Japan
                 </h1>
                 <div className="px-10 mx-auto max-w-7xl py-16">
 
                     <div className="grid overflow-hidden lg:rounded-xl">
                         <div className="grid items-center lg:grid-cols-2">
+                            <div className="order-last overflow-hidden bg-gray-100 h-96 lg:order-first">
+                                <img src="/images/columns/column.png" className="object-cover w-full h-full" alt="" />
+                            </div>
                             <div className="flex flex-col items-start justify-center h-full py-16 pl-16 pr-16 space-y-4 bg-white lg:pr-20 lg:py-0">
-                                <h3 className="text-2xl font-semibold sm:text-4xl text-rose-400">
+                                <h3 className="text-2xl font-semibold sm:text-4xl text-teal-600" >
+                                    <a href='/columns'> Meet Our Members</a>
+                                </h3>
+                                <p className="text-lg text-left text-gray-600 text-justify">
+                                    Through a variety of articles and interviews, we'll delve into the rich culture, vibrant cities, and unique experiences that make Japan such a fascinating place to live. 
+                                    From discussing the job market and education system, to exploring the best places to eat and visit, we'll provide a wealth of insights and information for anyone interested in learning more about life in Japan. 
+                                    So sit back, relax, and join us on this exciting journey through Japan!
+                                    <a className="text-xl font-sans text-gray-800 font-bold" href="/columns">[Read more]</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="grid items-center lg:grid-cols-2">
+                            <div className="flex flex-col items-start justify-center h-full py-16 pl-16 pr-16 space-y-4 bg-white lg:pr-20 lg:py-0">
+                                <h3 className="text-2xl font-semibold sm:text-4xl text-blue-400">
                                     <a href='/tips/living'> Living in Japan</a>
                                 </h3>
                                 <p className="text-lg text-gray-600 text-justify">
@@ -23,13 +40,13 @@ export default function Tips() {
                                 </p>
                             </div>
                             <div className="overflow-hidden bg-gray-100 h-96">
-                                <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=3270&amp;q=80" className="object-cover w-full h-full" alt="" />
+                                <img src="/images/columns/living-in-japan.png" className="object-cover w-full h-full" alt="" />
                             </div>
                         </div>
 
                         <div className="grid items-center lg:grid-cols-2">
                             <div className="order-last overflow-hidden bg-gray-100 h-96 lg:order-first">
-                                <img src="https://images.unsplash.com/photo-1541506618330-7c369fc759b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1665&amp;q=80" className="object-cover w-full h-full" alt="" />
+                                <img src="/images/columns/studying-in-japan.png" className="object-cover w-full h-full" alt="" />
                             </div>
                             <div className="flex flex-col items-start justify-center h-full py-16 pl-16 pr-16 space-y-4 bg-white lg:pr-20 lg:py-0">
                                 <h3 className="text-2xl font-semibold sm:text-4xl text-teal-600" >
@@ -55,7 +72,7 @@ export default function Tips() {
                                 </p>
                             </div>
                             <div className="bg-gray-100 h-96">
-                                <img src="https://images.unsplash.com/photo-1416339442236-8ceb164046f8?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3203&amp;q=80" className="object-cover w-full h-full" alt="" />
+                                <img src="/images/columns/working-in-japan.png" className="object-cover w-full h-full" alt="" />
                             </div>
                         </div>
                     </div>
