@@ -13,37 +13,38 @@ export default function Post({ postData, content }) {
       <Head>
         <title>{postData.title}</title>
       </Head>
-          <article className="propse prose-xl px-48 text-justify font-mono">
-          <h1 className="text-4xl md:text-5xl font-bold dark:text-blue text-center mb-12">{postData.title}</h1>
-              <p>Written on <Date dateString={postData.date} /></p>
-              <br/>
-              <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
-              <br/>
-                {postData.image.map((img) => (
-                  <div className='relative' width='500' height='500' align='center'>
-                    <Image
-                      alt={postData.title}
-                      src={img}
-                      unoptimized={true}
-                      height={500}
-                      width={800}
-                      intrinsic
-                    />
-                  </div>
-                ))}
-          </article>
-        
+      {postData.image.map((img) => (
+        <div className='relative' width='500' height='500' align='center'>
+          <Image
+            alt={postData.title}
+            src={img}
+            unoptimized={true}
+            height={500}
+            width={800}
+            intrinsic
+          />
+        </div>
+      ))}
+      <article className="propse prose-xl px-48 text-justify font-sans">
+        <h1 className="text-4xl md:text-5xl font-bold dark:text-blue text-center mb-12">{postData.title}</h1>
+        <p>Written on <Date dateString={postData.date} /></p>
+        <br />
+        <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
+        <br />
+
+      </article>
+
     </Layout>
   );
 }
 
 export async function getStaticPaths() {
-    // Return a list of possible value for id
-    const paths = getAllPostIds();
-    return {
-        paths,
-        fallback: false,
-    };
+  // Return a list of possible value for id
+  const paths = getAllPostIds();
+  return {
+    paths,
+    fallback: false,
+  };
 }
 
 export async function getStaticProps({ params }) {
