@@ -20,7 +20,7 @@ export default function Home({ allPostsData }) {
                             </p>
 
                             <div className="flex md:flex-row flex-col mt-7 md:w-auto w-full md:space-y-0 space-y-5 md:space-x-2">
-                                <a href="/about" className="px-6 py-3 text-lg bg-rose-400 text-center text-black-400 rounded font-bold text-white">Learn More About Us</a>
+                                <a href="/about" className="px-6 py-3 text-lg bg-blue-600 text-center text-black-400 rounded font-bold text-white">Learn More About Us</a>
                             </div>
                         </div>
 
@@ -36,11 +36,7 @@ export default function Home({ allPostsData }) {
                 <section className="bg-white py-16">
                     <div className="px-10 mx-auto max-w-7xl">
                         <div className="text-center">
-                            <h2 className="relative text-blue-600 inline-block px-5 py-2 mb-5 text-5xl font-bold  bg-white border-2 border-black">
-                                <div className="absolute w-full py-2 h-full inset-0 border-0 border-black bg-black ml-1 mt-1"></div>
-                                <div className="absolute inset-0 w-full h-full py-2 bg-white"></div>
-                                <span className="relative font-sans lg:text-5xl"><a href="/news">Our Activities</a></span>
-                            </h2>
+                            <h1 className="mb-3 text-5xl font-bold leading-tight text-center md:text-5xl font-sans text-blue-600 py-12">Our Activities</h1>
                         </div>
 
                         <div className="grid grid-cols-12 gap-8 py-8">
