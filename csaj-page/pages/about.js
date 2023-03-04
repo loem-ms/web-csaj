@@ -26,7 +26,7 @@ export const VALUE = {
 export default function About() {
     return (
         <Layout title="CSAJ-About Us">
-            <h1 className="font-sans py-12 text-5xl md:text-6xl lg:text-5xl font-extrabold mb-6 relative text-center text-rose-400">
+            <h1 className="font-sans py-12 text-6xl md:text-6xl lg:text-6xl font-bold mb-6 relative text-center text-blue-600">
                 Cambodian Students' Association in Japan
             </h1>
 
