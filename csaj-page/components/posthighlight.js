@@ -1,6 +1,6 @@
 export default function Posthighlight({ post }) {
     return (
-        <div class="relative font-sans col-span-12 duration-150 ease-out transform border-2 border-black cursor-pointer md:col-span-6 lg:col-span-4 hover:scale-105">
+        <div class="relative font-sans col-span-12 duration-150 ease-out transform  border-black cursor-pointer md:col-span-6 lg:col-span-4 hover:scale-105">
             <a href={`/posts/${post.id}`} class="block h-64 overflow-hidden">
                 <img src={post.image[0]} class="object-cover w-full h-full" />
             </a>

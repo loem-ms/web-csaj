@@ -5,7 +5,7 @@ export default function Tips() {
         <Layout title="CSAJ-Tips">
 
             <section className="w-full py-10 bg-white font-sans">
-                <h1 className="text-5xl md:text-6xl lg:text-6xl font-extrabold mb-6 relative text-center text-rose-400">
+                <h1 className="text-5xl md:text-6xl lg:text-6xl font-bold mb-6 relative text-center text-blue-600">
                     Life in Japan
                 </h1>
                 <div className="px-10 mx-auto max-w-7xl py-16">
@@ -20,8 +20,8 @@ export default function Tips() {
                                     <a href='/columns'> Meet Our Members</a>
                                 </h3>
                                 <p className="text-lg text-left text-gray-600 text-justify">
-                                    Through a variety of articles and interviews, we'll delve into the rich culture, vibrant cities, and unique experiences that make Japan such a fascinating place to live. 
-                                    From discussing the job market and education system, to exploring the best places to eat and visit, we'll provide a wealth of insights and information for anyone interested in learning more about life in Japan. 
+                                    Through a variety of articles and interviews, we'll delve into the rich culture, vibrant cities, and unique experiences that make Japan such a fascinating place to live.
+                                    From discussing the job market and education system, to exploring the best places to eat and visit, we'll provide a wealth of insights and information for anyone interested in learning more about life in Japan.
                                     So sit back, relax, and join us on this exciting journey through Japan!
                                     <a className="text-xl font-sans text-gray-800 font-bold" href="/columns">[Read more]</a>
                                 </p>
@@ -36,7 +36,7 @@ export default function Tips() {
                                 <p className="text-lg text-gray-600 text-justify">
                                     Japan is a beautiful country that is steeped in rich history and culture, and is home to many international students who come to study and experience the unique blend of traditional and modern lifestyles.
                                     However, moving to a new country can be an intimidating experience, especially if you are from a different culture and are not familiar with the local customs and ways of ...
-                                    <a className="text-xl font-sans text-gray-800 font-bold" href="/tips/living">[Read more]</a>
+                                    <a className="text-xl font-sans text-gray-800 font-bold" href="/tips/living"> [Read more]</a>
                                 </p>
                             </div>
                             <div className="overflow-hidden bg-gray-100 h-96">
