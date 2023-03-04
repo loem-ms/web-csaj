@@ -1,6 +1,8 @@
 import Layout from '../components/layout';
+import { getSortedColumnsData } from '../lib/columns';
+import Columnblock from '../components/columnblock';
 
-export default function Tips() {
+export default function Tips({ allColumnsData }) {
     return (
         <Layout title="CSAJ-Tips">
 
@@ -9,25 +11,7 @@ export default function Tips() {
                     Life in Japan
                 </h1>
                 <div className="px-10 mx-auto max-w-7xl py-16">
-
                     <div className="grid overflow-hidden lg:rounded-xl">
-                        <div className="grid items-center lg:grid-cols-2">
-                            <div className="order-last overflow-hidden bg-gray-100 h-96 lg:order-first">
-                                <img src="/images/columns/column.png" className="object-cover w-full h-full" alt="" />
-                            </div>
-                            <div className="flex flex-col items-start justify-center h-full py-16 pl-16 pr-16 space-y-4 bg-white lg:pr-20 lg:py-0">
-                                <h3 className="text-2xl font-semibold sm:text-4xl text-teal-600" >
-                                    <a href='/columns'> Meet Our Members</a>
-                                </h3>
-                                <p className="text-lg text-left text-gray-600 text-justify">
-                                    Through a variety of articles and interviews, we'll delve into the rich culture, vibrant cities, and unique experiences that make Japan such a fascinating place to live.
-                                    From discussing the job market and education system, to exploring the best places to eat and visit, we'll provide a wealth of insights and information for anyone interested in learning more about life in Japan.
-                                    So sit back, relax, and join us on this exciting journey through Japan!
-                                    <a className="text-xl font-sans text-gray-800 font-bold" href="/columns">[Read more]</a>
-                                </p>
-                            </div>
-                        </div>
-
                         <div className="grid items-center lg:grid-cols-2">
                             <div className="flex flex-col items-start justify-center h-full py-16 pl-16 pr-16 space-y-4 bg-white lg:pr-20 lg:py-0">
                                 <h3 className="text-2xl font-semibold sm:text-4xl text-blue-400">
@@ -77,7 +61,27 @@ export default function Tips() {
                         </div>
                     </div>
                 </div>
+
+                <div className="text-center">
+                    <h1 className="mb-3 text-5xl font-bold leading-tight text-center md:text-5xl font-sans text-blue-600 py-2"><a href="/columns">Meet Our Members</a></h1>
+                </div>
+                <div className="  px-8 py-6 mx-auto lg:max-w-screen-xl sm:max-w-xl md:max-w-full sm:px-12 md:px-16 lg:py-20 sm:py-16">
+                    <div className=" grid gap-x-8 gap-y-6 sm:gap-y-16 md:grid-cols-2 lg:grid-cols-3">
+                        {allColumnsData.map((post) => (
+                        <Columnblock post={{ id: post.id, date: post.date, title: post.title, abstract: post.abstract, image: post.image }} />
+                        ))}
+                    </div>
+                </div>
             </section>
         </Layout>
     );
 }
+
+export async function getStaticProps() {
+    const allColumnsData = getSortedColumnsData().slice(0, 3)
+    return {
+      props: {
+        allColumnsData
+      }
+    }
+  }

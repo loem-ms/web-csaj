@@ -44,14 +44,32 @@ export default function Home({ allPostsData }) {
                                 <Posthighlight post={{ id: post.id, date: post.date, title: post.title, abstract: post.abstract, image: post.image }} />
                             ))}
                         </div>
-
-                        <p className="text-2xl font-sansmb-7 text-right py-4 text-blue-600"><a href="/news">See more</a></p>
+                        <p className="text-2xl font-sansmb-7 text-right py-0 text-blue-600"><a href="/news">See more</a></p>
                     </div>
                 </section>
             </>
 
             <>
-                <section className="w-full py-2 lg:py-2 bg-white">
+                <div className="flex item-center justify-center px-16">
+                    <div className="hidden grid-cols-3 gap-32 sm:grid">
+                        <div className="col-span-1 text-center lg:text-left">
+                            <h4 className="text-7xl font-bold tracking-tight text-transparent lg:text-7xl bg-clip-text bg-gradient-to-r from-blue-300 to-blue-500">22</h4>
+                            <p className="text-sm font-semibold text-gray-400">Prefectures</p>
+                        </div>
+                        <div className="col-span-1 text-center lg:text-left">
+                            <h4 className="text-7xl font-bold tracking-tight text-transparent lg:text-7xl bg-clip-text bg-gradient-to-r from-blue-300 to-blue-500">147</h4>
+                            <p className="text-sm font-semibold text-gray-400">Students</p>
+                        </div>
+                        <div className="col-span-1 text-center lg:text-left">
+                            <h4 className="text-7xl font-bold tracking-tight text-transparent lg:text-7xl bg-clip-text bg-gradient-to-r from-blue-300 to-blue-500">729</h4>
+                            <p className="text-sm font-semibold text-gray-400">Alumni</p>
+                        </div>
+                    </div>
+                </div>
+            </>
+
+            <>
+                <section className="w-full py-24 lg:py-24 bg-white">
                     <div className="container px-8 mx-auto sm:px-12 lg:px-20">
                         <h1 className="mb-3 text-3xl font-bold leading-tight text-center md:text-5xl font-sans text-blue-600">Our Partners</h1>
                         <div className="grid grid-flow-col auto-col-max gap-16 py-16 mb-0 text-center lg:grid-flow-col lg:auto-col-max">

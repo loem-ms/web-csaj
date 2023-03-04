@@ -6,7 +6,7 @@ export default function Columns({ allColumnsData }) {
   return (
     <Layout title="CSAJ-Columns">
       <section className="w-full py-10 bg-white font-sans">
-        <h1 className=" text-5xl md:text-6xl lg:text-6xl font-extrabold mb-6 relative text-center text-rose-400">
+        <h1 className=" text-5xl md:text-6xl lg:text-6xl font-extrabold mb-6 relative text-center text-blue-600">
           Meet Our Members
         </h1>
         <div className="  px-8 py-10 mx-auto lg:max-w-screen-xl sm:max-w-xl md:max-w-full sm:px-12 md:px-16 lg:py-20 sm:py-16">
